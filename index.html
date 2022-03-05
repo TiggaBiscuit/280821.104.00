@@ -1,13 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <title>Dan Agnew - 280821.104.00</title>
-    <script type="module">
-            document.documentElement.classList.remove('no-js');
-            document.documentElement.classList.add('js');
-    </script>
     <meta name="description" content="Dan Agnew - A Site About Me">
     <meta property="og:title" content="Dan Agnew - 280821.104.00">
     <meta property="og:url" content="https://www.example.com/page"> <!-- TODO: update og:url -->
@@ -25,55 +21,53 @@
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
-    <meta name="theme-color" content="#FF00FF"> <!-- TODO: update meta theme color -->
-    <link type="text/css" rel="stylesheet" href="css/styles.css">  <!-- TODO: Update styles -->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
+    <meta name="theme-color" content="#ff9800">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,300;1,100;1,300&display=swap">
 </head>
 <body>
     <!-- Content -->
-
-    <nav class="nav-fixed">
-        <div class="nav-wrapper">
-          <a href="#" class="brand-logo">Dan Agnew</a>
-          <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
     
-      <ul class="sidenav" id="mobile-nav">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-
-    <!-- <nav>
-        <div class="nav-wrapper">
-            <a href="index.html" class="brand-logo">Logo</a> 
-                
-            <ul id="mobile-mobile" class="right hide-on-med-and-down">
-                <li><a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a></li>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+    <div class="nav-right visible-xs">
+        <div class="button" id="btn">
+            <div class="bar top"></div>
+            <div class="bar middle"></div>
+            <div class="bar bottom"></div>
         </div>
-
-        <ul id="slide-out" class="sidenav">
-            <li><a href="#!">First Sidebar Link</a></li>
-            <li><a href="#!">Second Sidebar Link</a></li>
+    </div>
+    <!-- nav-right -->
+    <main>  
+        <nav>
+            <div class="nav-right hidden-xs">
+                <div class="button" id="btn">
+                    <div class="bar top"></div>
+                    <div class="bar middle"></div>
+                    <div class="bar bottom"></div>
+                </div>
+            </div>
+            <!-- nav-right -->
+        </nav>
+      
+    <a href="https://codepen.io/tonkec/" class="ua" target="_blank">
+        <i class="fa fa-user"></i>
+    </a>
+    </main>
+      
+    <div class="sidebar">
+        <ul class="sidebar-list">
+            <li class="sidebar-item"><a href="#" class="sidebar-anchor">Item 1</a></li>
+            <li class="sidebar-item"><a href="#" class="sidebar-anchor">Item 2</a></li>
+            <li class="sidebar-item"><a href="#" class="sidebar-anchor">Item 3</a></li>
+            <li class="sidebar-item"><a href="#" class="sidebar-anchor">Item 4</a></li>
         </ul>
-        <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-    </nav> -->
+    </div>
+    
+    <h1>
+        This is a website.
+    </h1>  
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
