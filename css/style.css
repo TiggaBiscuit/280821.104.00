@@ -6,11 +6,20 @@ html {
     font-family: 'Roboto Mono', monospace;
 }
 
+/* Styling of the Title */
+
+.title {
+    padding-left: 100px;
+    color: #FFF;
+    font-size: 1.4em;
+    padding-top: 100px;
+}
+
 main {
     z-index: 2;
     position: relative;
     height: 100%;
-    background-color: #2D3142;
+    background-color: #04151F;
     -webkit-transitionw: transform .7s ease-in-out;
     -moz-transition: transform .7s ease-in-out;
     -ms-transition: transform .7s ease-in-out;
@@ -25,14 +34,14 @@ main {
     top: 0;
     z-index: 1;
     right: 0;
-    background-color: #EF8354;
+    background-color: #F26419;
 }
 
 .bar {
     display: block;
     height: 5px;
     width: 50px;
-    background-color: #EF8354;
+    background-color: #F26419;
     margin: 10px auto;
 }
 
@@ -115,13 +124,15 @@ nav {
     padding-top: 30px;
 }
 
+/* List Style in SideNav */
 .sidebar-list {
     padding: 0;
     margin: 0;
+    margin-left: 50px;
     list-style: none;
     position: relative;
-    margin-top: 150px;
-    text-align: center;
+    margin-top: 120px;
+    text-align: left;
 }
 
 .sidebar-item {
@@ -177,6 +188,7 @@ nav {
 
 .sidebar-anchor {
     color: #FFF;
+    /* NavBar List Text Colour */
     text-decoration: none;
     font-size: 1.8em;
     text-transform: uppercase;
@@ -192,6 +204,7 @@ nav {
     bottom: 0;
     left: 0;
     background-color: #FFF;
+    /* NavBar List Underline Colour */
     -webkit-transition: all .7s ease-in-out;
     -moz-transition: all .7s ease-in-out;
     -ms-transition: all .7s ease-in-out;
@@ -243,9 +256,11 @@ nav {
     .nav-right {
         position: absolute;
     }
+
     .hidden-xs {
         display: block;
     }
+
     .visible-xs {
         display: none;
     }
