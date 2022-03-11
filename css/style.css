@@ -1,3 +1,7 @@
+:root {
+    --bg-color: #04151F;
+}
+
 body,
 html {
     height: 100%;
@@ -9,17 +13,19 @@ html {
 /* Styling of the Title */
 
 .title {
-    padding-left: 100px;
+    padding-left: 180px;
     color: #FFF;
     font-size: 1.4em;
     padding-top: 100px;
 }
 
+/* Styling of the Navbar */
+
 main {
     z-index: 2;
     position: relative;
     height: 100%;
-    background-color: #04151F;
+    background-color: var(--bg-color);
     -webkit-transitionw: transform .7s ease-in-out;
     -moz-transition: transform .7s ease-in-out;
     -ms-transition: transform .7s ease-in-out;
@@ -245,6 +251,8 @@ nav {
     -o-transition: all 1s ease;
     transition: all 1s ease;
 }
+
+/* Media Queries */
 
 @media (min-width: 480px) {
     .nav-list {
